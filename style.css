@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --col-card-1: hsl(31, 77%, 52%);
+  --col-card-2: hsl(184, 100%, 22%);
+  --col-card-3: hsl(179, 100%, 13%);
+  --col-para: hsla(0, 0%, 100%, 0.75);
+  --col-bg: hsl(0, 0%, 95%);
+
+  --fs-base: 0.9rem;
+
+  --ff-primary: "Lexend Deca", sans-serif;
+  --ff-secondary: "Big Shoulders Display", cursive;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--col-bg);
+  font-size: var(--fa-base);
+  overflow-x: hidden;
+}
+
+main {
+  margin-inline: auto;
+  width: 90vw;
+  max-width: 780px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.card {
+  padding: 2rem;
+  width: 100%;
+}
+
+.card--1 {
+  background: var(--col-card-1);
+}
+
+.card--2 {
+  background: var(--col-card-2);
+}
+
+.card--3 {
+  background: var(--col-card-3);
+}
+
+.card__heading {
+  font-family: var(--ff-secondary);
+  text-transform: uppercase;
+  color: white;
+  margin-block: 0.8rem;
+}
+
+.card__para {
+  font-size: var(--fs-base);
+  color: var(--col-para);
+  font-family: var(--ff-primary);
+
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.card__btn {
+  display: inline-block;
+  font-size: 0.8rem;
+  background: white;
+  border-radius: 100px;
+  transition: 0.5s;
+  padding: 0.5rem 1.5rem;
+  outline: none;
+  font-weight: 700;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.card__btn:hover {
+  border-color: white;
+  background: transparent;
+  color: white;
+}
+
+.card__btn--1 {
+  color: var(--col-card-1);
+}
+
+.card__btn--2 {
+  color: var(--col-card-2);
+}
+
+.card__btn--3 {
+  color: var(--col-card-3);
+}
+
+footer {
+  font-size: 13px;
+}
+
+footer a:first-child {
+  color: var(--col-card-1);
+  font-weight: 700;
+}
+
+footer a:last-child {
+  color: var(--col-card-3);
+  font-weight: 700;
+}
+
+@media (min-width: 680px) {
+  .card__heading {
+    margin-block: 1rem;
+  }
+  .card__btn {
+    margin-top: 4rem;
+  }
+}
