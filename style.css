@@ -21,7 +21,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.5rem;
   align-items: center;
   justify-content: center;
   background-color: var(--col-bg);
@@ -44,7 +44,7 @@ main {
 }
 
 .card {
-  padding: 2rem;
+  padding: 3rem 4rem;
   width: 100%;
 }
 
@@ -62,9 +62,10 @@ main {
 
 .card__heading {
   font-family: var(--ff-secondary);
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: white;
-  margin-block: 0.8rem;
+  margin-block: 1.5rem;
 }
 
 .card__para {
@@ -85,7 +86,7 @@ main {
   padding: 0.5rem 1.5rem;
   outline: none;
   font-weight: 700;
-  margin-top: 1.2rem;
+  margin-top: 2rem;
   cursor: pointer;
   border: 2px solid transparent;
 }
@@ -123,10 +124,22 @@ footer a:last-child {
 }
 
 @media (min-width: 680px) {
+  .card {
+    padding: 3rem 5rem;
+  }
   .card__heading {
-    margin-block: 1rem;
+    margin-block: 3rem;
+    font-size: 1.8rem;
+  }
+
+  .card__para {
+    font-size: 1.2rem;
   }
   .card__btn {
-    margin-top: 4rem;
+    margin-top: 6rem;
+  }
+
+  footer {
+    font-size: 15px;
   }
 }
