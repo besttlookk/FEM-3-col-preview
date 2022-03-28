@@ -41,6 +41,7 @@ main {
   width: 100%;
   border-radius: 0.3rem;
   overflow: hidden;
+  margin-top: 2rem;
 }
 
 .card {
@@ -62,7 +63,7 @@ main {
 
 .card__heading {
   font-family: var(--ff-secondary);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   color: white;
   margin-block: 1.5rem;
@@ -124,12 +125,15 @@ footer a:last-child {
 }
 
 @media (min-width: 680px) {
+  .card-container {
+    margin-top: 0;
+  }
   .card {
-    padding: 3rem 2.5rem;
+    padding: 3rem 2.8rem;
   }
   .card__heading {
     margin-block: 2.4rem;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
   }
 
   .card__para {
