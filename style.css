@@ -21,7 +21,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.8rem;
   align-items: center;
   justify-content: center;
   background-color: var(--col-bg);
@@ -45,7 +45,7 @@ main {
 }
 
 .card {
-  padding: 3rem 4rem;
+  padding: 3rem 2rem;
   width: 100%;
 }
 
